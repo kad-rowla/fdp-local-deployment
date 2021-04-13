@@ -1,0 +1,55 @@
+version: '3'
+services:
+
+  mongo:
+    image: mongo:4.2.3
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: wizard
+    volumes:
+      - ./mongo/data:/data/db
+      - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+
+  fdp:
+    image: fairdata/fairdatapoint:1.6.0
+    hostname: fdp
+    volumes:
+      - ./fdp/application.yml:/fdp/application.yml:ro
+
+  fdp_client:
+    image: fairdata/fairdatapoint-client:1.6.0
+    hostname: fdp_client
+    environment:
+      FDP_HOST: fdp
+    volumes:
+      - ./fdp-client/variables.scss:/src/scss/custom/_variables.scss:ro
+      - ./fdp-client/assets:/usr/share/nginx/html/assets:ro
+    ports:
+      - 8081:80
+
+  blazegraph:
+    image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
+    ports:
+      - 8085:8080
+    volumes:
+      - ./blazegraph:/blazegraph-data
+
+  # agraph:
+  #   image: franzinc/agraph:v7.0.1
+  #   restart: always
+  #   ports:
+  #     - 10000-10035:10000-10035
+  #   hostname: agraph
+  #   shm_size: '1gb'
+  #   volumes:
+  #     - ./agraph/data:/agraph/data/
+  #     - ./agraph/agraph.cfg:/agraph/etc/agraph.cfg
+
+  # submission_service:
+  #   image: datastewardshipwizard/triple-store-submission-service:1.1.0
+  #   restart: always
+  #   hostname: submission_service
+  #   volumes:
+  #     - ./submission-service/config.yml:/app/config.yml:ro
