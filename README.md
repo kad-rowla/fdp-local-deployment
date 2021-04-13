@@ -1,24 +1,18 @@
-# VODAN in the Box Basic Deployment Configuration
+# Kadaster FDP Local Deployment Configuration
 
-**‼ More information can be found in the [documentation 📕](https://docs.vodan.fairdatapoint.org/)**
+This is an example deployment of Kadasters FDP instance for a usage on a local machine. It contains images from [FAIR Data Point](https://fairdatapoint.readthedocs.io/) (FDP).
 
-This is an example deployment of VODAN in the Box ready for a usage on a local machine. It contains preconfigured [Data Stewardship Wizard](https://ds-wizard.org) (DSW) and [FAIR Data Point](https://fairdatapoint.readthedocs.io/) (FDP).
-
-If you want to run it in production, please use [the production deployment configuration](https://github.com/VODAN-Tech/vodan-deployment-production).
+If you want to see a mock-up of how this might run in production, please use [the production deployment configuration](https://github.comkad-rowla/fdp-production-deployment).
 
 ## Instructions
 
 **1. Clone repository**
 
 ```
-$ git clone https://github.com/VODAN-Tech/vodan-deployment-basic
+$ git clone https://github.com/kad-rowla/fdp-local-deployment.git
 ```
 
-**2. Edit configs**
-
-The DSW and FDP are mostly preconfigured. However, there are still some properties that has to be defined. Go through configuration files and find `(!)` with description what to do.
-
-**3. Run docker**
+**2. Run docker**
 
 ```
 $ docker-compose up -d
@@ -37,4 +31,4 @@ $ docker-compose up -d
 
 ## Important notes
 
-For more information, see [VODAN Docs](https://docs.vodan.fairdatapoint.org/), [FDP Docs](https://fairdatapoint.readthedocs.io/) and [DSW Docs](https://docs.ds-wizard.org)
+For more information, see [FDP Docs](https://fairdatapoint.readthedocs.io/)
