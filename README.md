@@ -26,4 +26,6 @@ $ docker-compose up -d
 
 ## Important notes
 
-For more information, see [FDP Docs](https://fairdatapoint.readthedocs.io/)
+For more information on the overall vision for the FDP, see [FDP Docs](https://fairdatapoint.readthedocs.io/)
+
+
