@@ -29,7 +29,7 @@ $ docker-compose up -d
 The following illustrates the overall architecture of this project in the Kadaster context:
 
 Figure 1: Project Architecture in Kadaster's Context
-![image](https://user-images.githubusercontent.com/74549995/114609469-24703a80-9c9f-11eb-99b7-c17cc1073a09.png)
+![image](https://user-images.githubusercontent.com/74549995/114614386-b9c1fd80-9ca4-11eb-907a-a12ec5976138.png)
 
 ## Important notes
 
