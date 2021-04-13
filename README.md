@@ -21,13 +21,8 @@ $ docker-compose up -d
 **4. Open browser**
 
 - FAIR Data Point
-  - Default username:`albert.einstein@example.com`
+  - Default username:`nikola.tesla@example.com`
   - Default password `password`.
-
-- Data Stewardship Wizard
-  - Default username:`albert.einstein@example.com`
-  - Default password `password`.
-
 
 ## Important notes
 
