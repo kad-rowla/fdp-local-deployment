@@ -2,7 +2,7 @@
 
 This is an example local deployment of Kadasters FDP instance for a usage and configuration on a local machine. It contains images from [FAIR Data Point](https://fairdatapoint.readthedocs.io/) (FDP) and make use of persistent storage for both user credentials and metadata components based on MongoDB and Blazegraph respectively. 
 
-If you want to see a mock-up of how this might run in production, please use [the production deployment configuration](https://github.comkad-rowla/fdp-production-deployment) and for the actual deployment of FDP on a Kadaster server, please visit: https://labs.kadaster.nl
+If you want to see a mock-up of how this might run in production, please use [the production deployment configuration](https://github.com/kad-rowla/fdp-production-deployment) and for the actual deployment of FDP on a Kadaster server, please visit: https://labs.kadaster.nl
 
 ## Instructions
 
